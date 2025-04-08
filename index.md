@@ -59,9 +59,7 @@ tools that already did it: [norwegianblue](https://github.com/hugovk/norwegianbl
 [![Powered by Netlify](https://www.netlify.com/v3/img/components/netlify-light.svg)](https://www.netlify.com)
 [![Sponsored under Datadog OSS Plan](assets/datadog-logo.png)](https://datadog.com)
 
-
 [python]: /python
-[nodejs]: /nodejs
 [java]: /java
 [php]: /php
 [iphone]: /iphone
