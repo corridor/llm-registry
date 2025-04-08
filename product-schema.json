@@ -32,16 +32,7 @@
       "title": "Category",
       "description": "Specify the category of this product.",
       "enum": [
-        "app",
-        "db",
-        "device",
-        "framework",
-        "lang",
-        "library",
-        "os",
-        "server-app",
-        "service",
-        "standard"
+        "llm"
       ]
     },
     "permalink": {
@@ -72,7 +63,9 @@
     },
     "auto": {
       "type": "object",
-      "required": ["methods"],
+      "required": [
+        "methods"
+      ],
       "properties": {
         "cumulative": {
           "title": "Mark auto-update as being cumulative (optional, default = false)",
