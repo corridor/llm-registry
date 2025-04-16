@@ -112,6 +112,7 @@ include:
 exclude:
   - .idea
   - _auto
+  - venv
   - CODE-OF-CONDUCT.md
   - Gemfile
   - Gemfile.lock
