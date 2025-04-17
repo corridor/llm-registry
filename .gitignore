@@ -1,0 +1,49 @@
+########## Common
+
+# OS Specific
+.DS_Store
+Thumbs.db
+*.iml
+ui-src/
+
+# Editors/IDE
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.ipr
+*.iws
+.idea
+.spyderproject
+.spyproject
+.vscode
+
+# Log files
+*.log
+*.log.*
+
+# Process ID files
+*.pid
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Redis
+dump.rdb
+
+# Sonarqube
+.scannerwork
+
+# Binary files - Should be generated on the fly and not commited
+*.parquet
+*.pdf
+*.xlsx
+*.csv
+*.pkl
+*.bin
+*.pmml
+*.zip
