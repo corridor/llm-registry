@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-JSON Loader</title>
+  </head>
+  <body>
+    <h1>📦 LLM Registry</h1>
+    <button id="loadBtn">Load JSON Files</button>
+    <div id="results">Loading data...</div>
+
+    <script>
+      const jsonFiles = ["models/google.json", "models/openai.json"];
+
+      Promise.all(
+        jsonFiles.map(url =>
+          fetch(url)
+            .then(response => {
+              if (!response.ok) throw new Error(`Failed to fetch ${url}`);
+              return response.json();
+            })
+            .then(data => ({ url, data }))
+            .catch(error => ({ url, error }))
+        )
+      ).then(results => {
+        const resultsDiv = document.getElementById('results')
+        resultsDiv.innerHTML = "";
+        resultsDiv.forEach((result) => {
+          const el = document.createElement("div");
+          el.innerHTML = `<h3>${result.url}</h3><pre>${JSON.stringify(
+            result.data || result.error,
+            null,
+            2
+          )}</pre>`;
+          resultsDiv.appendChild(el);
+        });
+      });
+    </script>
+  </body>
+</html>
