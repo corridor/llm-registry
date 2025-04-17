@@ -12,6 +12,7 @@ customColumns:
 
 releases:
   - releaseCycle: "pro-002"
+    releaseLabel: "gemini-1.0-pro-002"
     releaseDate: 2024-04-09
     eol: 2025-04-21
     latest: "pro-002"
@@ -19,6 +20,7 @@ releases:
     recommendedUpgrade: "gemini-2.0-flash"
 
   - releaseCycle: "pro-001"
+    releaseLabel: "gemini-1.0-pro-001"
     releaseDate: 2024-02-15
     eol: 2025-04-21
     latest: "pro-001"
